@@ -1,0 +1,11 @@
+server:
+  port: ${SERVER_PORT:8081}
+spring:
+  application.name: ${APPLICATION_NAME:spring-security-keycloak}
+  main:
+      allow-circular-references: true
+keycloak:
+  auth-server-url: http://localhost:8080/auth
+  realm: RealmIvan
+  resource: client-app
+  public-client: true
